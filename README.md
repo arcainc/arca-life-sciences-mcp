@@ -65,6 +65,7 @@ npx -y mcp-remote https://app.arca.inc/api/public/mcp
 - `server.json`: the official MCP Registry entry.
 - `mcp.json`: a generic client configuration.
 - `gemini-extension.json`: the Gemini CLI extension manifest.
+- `llms-install.md`: setup steps for agents such as Cline.
 
 ## Support
 
