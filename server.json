@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "inc.arca/life-sciences",
+  "title": "Arca Life Sciences",
+  "description": "Free, no-key search of PubMed, FDA drug and device records and ClinicalTrials.gov, with citations.",
+  "version": "0.1.0",
+  "websiteUrl": "https://www.arca.inc/mcp",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.arca.inc/api/public/mcp"
+    }
+  ],
+  "repository": {
+    "url": "https://github.com/arcainc/arca-life-sciences-mcp",
+    "source": "github"
+  }
+}

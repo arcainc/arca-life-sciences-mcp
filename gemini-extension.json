@@ -1,0 +1,10 @@
+{
+  "name": "arca-life-sciences",
+  "version": "0.1.0",
+  "description": "Free, no-key search of PubMed, FDA drug and device records and ClinicalTrials.gov, with citations.",
+  "mcpServers": {
+    "arca-life-sciences": {
+      "httpUrl": "https://app.arca.inc/api/public/mcp"
+    }
+  }
+}
