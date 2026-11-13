@@ -54,6 +54,10 @@ Clients without remote MCP support:
 npx -y mcp-remote https://app.arca.inc/api/public/mcp
 ```
 
+Microsoft 365 Copilot:
+
+Build and sideload the [Arca Research app package](copilot/README.md). It connects to the same free public endpoint. Custom app upload and Copilot access depend on your Microsoft 365 license and organization policy. No Arca sign-in is needed.
+
 ## Example prompts
 
 - Which telehealth companies got FDA warning letters about compounded semaglutide?

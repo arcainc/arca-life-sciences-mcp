@@ -1,0 +1,49 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/copilot/plugin/v2.4/schema.json",
+  "schema_version": "v2.4",
+  "name_for_human": "Arca Research",
+  "namespace": "arcaResearch",
+  "description_for_human": "Search scientific literature, FDA records and clinical trials with Arca.",
+  "description_for_model": "Use Arca to search public life sciences evidence and read source records. Includes scientific literature, FDA drug and device records, clinical trials and other public datasets. Use for all scientific and regulatory research requests.",
+  "contact_email": "contact@arca.inc",
+  "legal_info_url": "https://arca.inc/legal/terms-of-service",
+  "privacy_policy_url": "https://arca.inc/legal/privacy-policy",
+  "functions": [
+    {
+      "name": "search_medical",
+      "description": "Hybrid keyword + semantic search over Arca's mirrored public-source corpus: FDA drug labels, Drugs@FDA approvals, complete response letters, warning letters, Orange Book, Purple Book, NDC, drug shortages, device 510(k)/PMA/registrations, MAUDE adverse events, food/supplement/cosmetic and animal drug adverse events, tobacco product problem reports, DailyMed, GUDID, postmarket requirements, import refusals, inspections, Form 483s, ClinicalTrials.gov studies, VAERS reports, CDC data, EU expert panel opinions, and BfArM/PMDA device vigilance. Press releases and SEC company filings are searched only when sourceTypes names press_releases or company_filings. Read-only lookup of already-published records: it cannot file, submit, or report anything to FDA, VAERS, MedWatch, or any other agency, so do not call it for requests to file or submit a report. When the question names a record type (warning letters, labels, adverse event reports, trials, recalls), pass the matching sourceTypes rather tha"
+    },
+    {
+      "name": "search_papers",
+      "description": "Ranked PubMed literature search: Arca's paper index fused with PubMed Best Match, with citation and open-access metadata from OpenAlex. Returns papers with title, authors, journal, year, DOI, PMID, abstract, citation count, and open-access status."
+    },
+    {
+      "name": "fetch_source_record",
+      "description": "Read the indexed text of one public-source record by its recordId (returned by search_medical). Use after search when the excerpt is not enough. Returns a bounded text window; pass nextInput unchanged to continue. contentCapped reports text unavailable beyond the stored content."
+    },
+    {
+      "name": "list_datasets",
+      "description": "Describe the corpus this server searches: the source lanes search_medical accepts in sourceTypes, with the underlying mirrored datasets in each."
+    }
+  ],
+  "runtimes": [
+    {
+      "type": "RemoteMCPServer",
+      "auth": {
+        "type": "None"
+      },
+      "spec": {
+        "url": "https://app.arca.inc/api/public/mcp",
+        "mcp_tool_description": {
+          "file": "mcp-tools.json"
+        }
+      },
+      "run_for_functions": [
+        "search_medical",
+        "search_papers",
+        "fetch_source_record",
+        "list_datasets"
+      ]
+    }
+  ]
+}
