@@ -1,0 +1,37 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.19/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.19",
+  "version": "1.0.2",
+  "id": "908a96ea-3c4a-4b01-a634-c1a8a0437153",
+  "developer": {
+    "name": "Arca",
+    "websiteUrl": "https://arca.inc",
+    "privacyUrl": "https://arca.inc/legal/privacy-policy",
+    "termsOfUseUrl": "https://arca.inc/legal/terms-of-service"
+  },
+  "name": {
+    "short": "Arca Research",
+    "full": "Arca Life Sciences Research"
+  },
+  "description": {
+    "short": "Search scientific and regulatory sources with Arca, directly in Copilot.",
+    "full": "Find scientific literature, FDA records and clinical trial evidence from Arca\u2019s public research corpus. Explore sources and build concise research briefs with linked evidence, directly in Microsoft Copilot."
+  },
+  "icons": {
+    "outline": "outline.png",
+    "color": "color.png"
+  },
+  "accentColor": "#18251F",
+  "copilotAgents": {
+    "declarativeAgents": [
+      {
+        "id": "arcaResearch",
+        "file": "declarativeAgent.json"
+      }
+    ]
+  },
+  "validDomains": [
+    "app.arca.inc",
+    "arca.inc"
+  ]
+}
