@@ -22,6 +22,8 @@ def validate():
     plugin = json.loads((ROOT / "ai-plugin.json").read_text())
     tools = json.loads((ROOT / "mcp-tools.json").read_text())
     assert manifest["name"]["short"] == agent["name"] == plugin["name_for_human"]
+    assert "continueInArca" in agent["instructions"]
+    assert "Get a fuller answer in Arca" in agent["instructions"]
     assert manifest["copilotAgents"]["declarativeAgents"][0]["file"] == "declarativeAgent.json"
     assert agent["actions"][0]["file"] == "ai-plugin.json"
     runtime, = plugin["runtimes"]
