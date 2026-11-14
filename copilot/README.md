@@ -2,7 +2,7 @@
 
 This package connects a Copilot declarative agent to Arca's free public research MCP. It needs no Arca account or API key. Private libraries and chats are not included.
 
-These are the source files from the v1.0.2 demo package tested in Copilot on November 13, 2026. A sideloaded app is not a Marketplace listing. This repository does not establish that Microsoft has approved the package.
+These files build on the v1.0.2 demo package tested in Copilot on November 13, 2026. Version 1.0.3 explicitly tells Copilot to show the returned Arca continuation link, because the demo package could omit it. A sideloaded app is not a Marketplace listing. This repository does not establish that Microsoft has approved the package.
 
 ## Build
 
