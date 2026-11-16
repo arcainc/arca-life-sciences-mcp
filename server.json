@@ -3,7 +3,7 @@
   "name": "inc.arca/life-sciences",
   "title": "Arca Life Sciences",
   "description": "Free, no-key search of PubMed, FDA drug and device records and ClinicalTrials.gov, with citations.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "websiteUrl": "https://www.arca.inc/mcp",
   "remotes": [
     {
