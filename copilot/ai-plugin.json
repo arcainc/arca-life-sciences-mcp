@@ -11,7 +11,7 @@
   "functions": [
     {
       "name": "search_medical",
-      "description": "Hybrid keyword + semantic search over Arca's mirrored public-source corpus: FDA drug labels, Drugs@FDA approvals, complete response letters, warning letters, Orange Book, Purple Book, NDC, drug shortages, device 510(k)/PMA/registrations, MAUDE adverse events, food/supplement/cosmetic and animal drug adverse events, tobacco product problem reports, DailyMed, GUDID, postmarket requirements, import refusals, inspections, Form 483s, ClinicalTrials.gov studies, VAERS reports, CDC data, EU expert panel opinions, and BfArM/PMDA device vigilance. Press releases and SEC company filings are searched only when sourceTypes names press_releases or company_filings. Read-only lookup of already-published records: it cannot file, submit, or report anything to FDA, VAERS, MedWatch, or any other agency, so do not call it for requests to file or submit a report. When the question names a record type (warning letters, labels, adverse event reports, trials, recalls), pass the matching sourceTypes rather tha"
+      "description": "Read-only keyword and semantic search of Arca's public regulatory, clinical and safety records, including FDA warning letters, drug labels, inspections, device records, ClinicalTrials.gov studies and public adverse-event reports. Supports source-type and metadata filters. Returns matching records with source URLs and a link to continue the research in Arca. No regulatory filing or submission capability."
     },
     {
       "name": "search_papers",

@@ -2,7 +2,7 @@
 
 This package connects a Copilot declarative agent to Arca's free public research MCP. It needs no Arca account or API key. Private libraries and chats are not included.
 
-These files build on the v1.0.2 demo package tested in Copilot on November 13, 2026. Version 1.0.3 explicitly tells Copilot to show the returned Arca continuation link, because the demo package could omit it. A sideloaded app is not a Marketplace listing. This repository does not establish that Microsoft has approved the package.
+These files build on the v1.0.2 demo package tested in Copilot on November 13, 2026. The agent explicitly shows the returned Arca continuation link. Version 1.0.4 adds Microsoft certification corrections: setup and scope in the description, complete tool descriptions, a white transparent outline icon and explicit clickable source links. A sideloaded app is not a Marketplace listing. This repository does not establish that Microsoft has approved the package.
 
 ## Build
 
@@ -13,6 +13,13 @@ python3 copilot/package.py /tmp/Arca-Research-Copilot.zip
 ```
 
 The script checks the file references, tool names, no-auth public endpoint and referral-link output fields before building the ZIP. It does not replace Microsoft's schema validation or a test in Copilot.
+
+Run the regression tests with the development dependencies installed:
+
+```sh
+python3 -m pip install -r copilot/requirements-dev.txt
+python3 -m unittest discover -s copilot -p 'test_*.py'
+```
 
 ## Install for personal testing
 

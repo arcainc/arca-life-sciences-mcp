@@ -1,7 +1,7 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.19/MicrosoftTeams.schema.json",
   "manifestVersion": "1.19",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "id": "908a96ea-3c4a-4b01-a634-c1a8a0437153",
   "developer": {
     "name": "Arca",
@@ -14,8 +14,8 @@
     "full": "Arca Life Sciences Research"
   },
   "description": {
-    "short": "Search scientific and regulatory sources with Arca, directly in Copilot.",
-    "full": "Find scientific literature, FDA records and clinical trial evidence from Arca\u2019s public research corpus. Explore sources and build concise research briefs with linked evidence, directly in Microsoft Copilot."
+    "short": "Search scientific and regulatory sources with Arca in Microsoft 365 Copilot.",
+    "full": "Arca Research brings public life sciences research into Microsoft 365 Copilot. It is one of the agents for Microsoft Copilot, helping researchers, regulatory affairs teams and clinical teams compare scientific and regulatory evidence. Search PubMed literature, FDA records and ClinicalTrials.gov studies, read available source records and create research briefs with linked citations. Compare warning-letter findings, literature on a scientific topic or study-design facts without searching each source separately. This app supports English. Arca Research is free and needs no Arca account or API key. Microsoft 365 Copilot access and your organization's installation policies still apply. It searches public records only, not private Arca libraries or chats. Literature results include abstracts and metadata, not guaranteed full-text access. It cannot file reports or provide medical advice. An optional continuation link opens a separate Arca web research chat for a longer answer; that web experience is outside Teams and Copilot. Get started and review coverage: https://www.arca.inc/mcp. Get help: https://www.arca.inc/support or contact@arca.inc."
   },
   "icons": {
     "outline": "outline.png",
